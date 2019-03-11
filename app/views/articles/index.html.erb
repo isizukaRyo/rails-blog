@@ -1,0 +1,13 @@
+<div class="container">
+        <% @articles.each do|article| %>
+        <%=link_to article do %>
+  <div class="col-md-12 article_container">
+        <p><%= article.title %></p>
+        <p><%= article.created_at.strftime("%Y年%m月%d日") %></p>
+
+    
+  </div>
+<% end %>
+<%end%>
+
+</div>

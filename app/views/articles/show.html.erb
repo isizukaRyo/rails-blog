@@ -1,0 +1,9 @@
+<div class="container show_box">
+        <h1 class=" article_title"><%=@article.title%></h1>
+  <div class="col-md-2 show_inner ">
+    <p class="body"><%= simple_format @article.body %></p>
+    
+   <p style="float: right"><%= link_to '編集', edit_article_path(@article), class: 'btn' %></p>
+    <p style="float: right"><%= link_to '削除',article_path(@article), method: :delete,data:{confirm:'削除してもいいですか？'},class: 'btn' %></p>
+  </div>
+</div>

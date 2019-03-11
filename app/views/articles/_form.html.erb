@@ -1,0 +1,16 @@
+    <%= form_for @article do |f| %>
+     
+     <div class = "form_group">
+         <p class="title"><%=f.label :title, 'タイトル' %></p>
+       <%= f.text_field:title, class: 'form-control' %>  
+     </div>
+     
+     <div class="form_group">
+         <p class="text"><%= f.label :title, '本文' %></p>
+          <%= f.text_area:body,rows: 10, class: 'form-control' %>
+     </div>
+     
+   
+     <p class="create_btn"><%= f.submit class: 'btn btn-success' %></p>
+    
+  <%end%>
